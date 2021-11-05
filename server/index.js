@@ -2,9 +2,9 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import usersRoutes from './routes/users.js';
+import userRoutes from './routes/user.js';
 
-app.use('/users', usersRoutes);
+app.use('/users', userRoutes);
 
 const app = express();
 
