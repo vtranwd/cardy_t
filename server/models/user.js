@@ -6,8 +6,10 @@ const userSchema = mongoose.Schema({
     username: String,
     password: String,
     email: String,
-    languages: [
-        cards:[String]
-    ],
+    subjectLanguage:[String]
 
-})
+});
+
+const user = mongoose.model('user', userSchema);
+
+export default user;
